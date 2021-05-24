@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Dimension Values For Item Alarm Layout -->
+    <dimen name="margin_item_cardView_8">8dp</dimen>
+    <dimen name="cornerRadius_item_cardView_10">10dp</dimen>
+    <dimen name="padding_item_constraintLayout_15">15dp</dimen>
+    <dimen name="textSize_item_time">25sp</dimen>
+    <dimen name="margin_item_daytime">5dp</dimen>
+    <dimen name="margin_item_daytime_5">5dp</dimen>
+    <dimen name="textSize_item_dayTime">20sp</dimen>
+    <dimen name="textSize_item_20">20sp</dimen>
+    <dimen name="width_item_50">50dp</dimen>
+    <dimen name="height_item_50">50dp</dimen>
+    <dimen name="margin_item_button_10">10dp</dimen>
+    <dimen name="width_item_button_35">35dp</dimen>
+    <dimen name="height_item_button_25">35dp</dimen>
+    <dimen name="height_item_button_35">35dp</dimen>
+    <dimen name="width_item_toggle_50">50dp</dimen>
+    <dimen name="height_item_toggle_50">50dp</dimen>
+
+    <!--  Dimension Values For Alarm Activity Layout-->
+    <dimen name="margin_alarmActivity_20">20dp</dimen>
+    <dimen name="margin_alarmActivity_10">10dp</dimen>
+    <dimen name="width_alarmActivity_0">0dp</dimen>
+
+    <!--  Dimension Values For Main Activity Layout -->
+    <dimen name="width_main_recyclerView_0">0dp</dimen>
+    <dimen name="height_main_recyclerView_0">0dp</dimen>
+
+    <!--  Dimension Values For Delete Dialog -->
+    <dimen name="width_dialog_delete_cardView_0">0dp</dimen>
+    <dimen name="padding_dialog_delete_0">20dp</dimen>
+    <dimen name="textSize_dialog_delete_20">20sp</dimen>
+    <dimen name="margin_dialog_delete_btn_20">20dp</dimen>
+
+    <!--  Dimension Values For Update Dialog -->
+    <dimen name="cornerRadius_dialog_update_5">5dp</dimen>
+    <dimen name="margin_dialog_update_10">10dp</dimen>
+    <dimen name="margin_dialog_update_20">20dp</dimen>
+    <dimen name="width_dialog_update_0">0dp</dimen>
+</resources>

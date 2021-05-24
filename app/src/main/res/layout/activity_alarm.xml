@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.PickTimeActivity">
+
+
+    <TimePicker
+        android:id="@+id/alarmActivity_timePicker"
+        android:layout_width="@dimen/width_alarmActivity_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/alarmActivity_edtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TimePicker>
+
+    <EditText
+        android:id="@+id/alarmActivity_edtName"
+        android:layout_width="@dimen/width_alarmActivity_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_alarmActivity_10"
+        android:layout_marginTop="@dimen/margin_alarmActivity_20"
+        android:hint="@string/alarmActivity_editText_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarmActivity_timePicker" />
+
+
+    <Button
+        android:id="@+id/alarmActivity_btnAddAlarm"
+        android:layout_width="@dimen/width_alarmActivity_0"
+        android:layout_height="wrap_content"
+        android:text="@string/alarmActivity_text_btnAddAlarm"
+        android:layout_marginHorizontal="@dimen/margin_alarmActivity_10"
+        android:layout_marginTop="@dimen/margin_alarmActivity_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/alarmActivity_btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/alarmActivity_edtName" />
+
+    <Button
+        android:id="@+id/alarmActivity_btnCancel"
+        android:text="@string/alarmActivity_text_btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_alarmActivity_10"
+        android:layout_marginTop="@dimen/margin_alarmActivity_20"
+        app:layout_constraintStart_toEndOf="@id/alarmActivity_btnAddAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarmActivity_edtName"
+        />
+
+</android.support.constraint.ConstraintLayout>

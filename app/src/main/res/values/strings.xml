@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Alarm</string>
+
+    <!--  String Values For Item Alarm -->
+    <string name="item_textView_default_time">00:00</string>
+    <string name="item_text_am_dayTime">am</string>
+    <string name="item_text_default_alarm_name">Alarm Name</string>
+
+    <!--  String Values For Alarm Activity Layout -->
+    <string name="alarmActivity_editText_hint">Input Alarm Name</string>
+    <string name="alarmActivity_text_btnAddAlarm">Create Alarm</string>
+    <string name="alarmActivity_text_btnCancel">Cancel</string>
+
+    <!--  String Values For Delete Dialog -->
+    <string name="dialog_delete_text_tvAlert">Delete This Alarm ?</string>
+    <string name="dialog_delete_text_btnYes">YES</string>
+    <string name="dialog_delete_text_btnCancel">Cancel</string>
+
+    <!--  String Values For Update Dialog -->
+    <string name="dialog_update_editText_hint">Update Alarm Name</string>
+    <string name="dialog_update_text_btnAddAlarm">Update Alarm</string>
+    <string name="dialog_update_text_btnCancel">Cancel</string>
+    <string name="dialog_update_autoFill_edtName">New Alarm</string>
+
+
+</resources>

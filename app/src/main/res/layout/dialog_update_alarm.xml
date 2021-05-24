@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/cornerRadius_dialog_update_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TimePicker
+                android:id="@+id/popup_update_timePicker"
+                android:layout_width="@dimen/width_dialog_update_0"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </TimePicker>
+
+            <EditText
+                android:id="@+id/popup_update_edtName"
+                android:layout_width="@dimen/width_dialog_update_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_dialog_update_10"
+                android:layout_marginTop="@dimen/margin_dialog_update_20"
+                android:hint="@string/dialog_update_editText_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popup_update_timePicker"
+                android:autofillHints="@string/dialog_update_autoFill_edtName" />
+
+
+            <Button
+                android:id="@+id/popup_update_btnAddAlarm"
+                android:layout_width="@dimen/width_dialog_update_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_dialog_update_10"
+                android:layout_marginTop="@dimen/margin_dialog_update_20"
+                android:text="@string/dialog_update_text_btnAddAlarm"
+                app:layout_constraintEnd_toStartOf="@id/popup_update_btnCancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popup_update_edtName" />
+
+            <Button
+                android:id="@+id/popup_update_btnCancel"
+                android:layout_width="@dimen/width_dialog_update_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_dialog_update_10"
+                android:layout_marginTop="@dimen/margin_dialog_update_20"
+                android:text="@string/dialog_update_text_btnCancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/popup_update_btnAddAlarm"
+                app:layout_constraintTop_toBottomOf="@id/popup_update_edtName" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

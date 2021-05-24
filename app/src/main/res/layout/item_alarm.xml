@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/item_alarm_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_item_cardView_8"
+        android:layout_marginBottom="@dimen/margin_item_cardView_8"
+        app:cardCornerRadius="@dimen/cornerRadius_item_cardView_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_item_constraintLayout_15">
+
+            <LinearLayout
+                android:id="@+id/item_alarm_linearLayout_alarmInformation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/item_alarm_linearLayout_alarmSetting"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_alarm_tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_textView_default_time"
+                        android:textSize="@dimen/textSize_item_time"
+                        android:textColor="@color/orange"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_alarm_tvDayTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_text_am_dayTime"
+                        android:layout_marginStart="@dimen/margin_item_daytime_5"
+                        android:textSize="@dimen/textSize_item_dayTime"
+                        android:textColor="@color/grey"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/item_alarm_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_text_default_alarm_name"
+                    android:textSize="@dimen/textSize_item_20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_alarm_linearLayout_alarmSetting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/item_alarm_linearLayout_alarmInformation"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ToggleButton
+                    android:id="@+id/item_alarm_toggleBtn"
+                    android:layout_width="@dimen/width_item_toggle_50"
+                    android:layout_height="@dimen/height_item_toggle_50"
+                    android:layout_marginHorizontal="@dimen/margin_item_button_10"
+                    android:background="@drawable/ic_toggle_button"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <Button
+                    android:id="@+id/item_alarm_btnEdit"
+                    android:layout_width="@dimen/width_item_button_35"
+                    android:layout_height="@dimen/height_item_button_35"
+                    android:layout_marginHorizontal="@dimen/margin_item_button_10"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:backgroundTint="@color/yellow" />
+
+                <Button
+                    android:id="@+id/item_alarm_btnDelete"
+                    android:layout_width="@dimen/width_item_button_35"
+                    android:layout_height="@dimen/height_item_button_35"
+                    android:layout_marginHorizontal="@dimen/margin_item_button_10"
+                    android:background="@android:drawable/ic_menu_delete"
+                    android:backgroundTint="@color/red" />
+
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
